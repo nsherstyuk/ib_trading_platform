@@ -51,12 +51,12 @@ def main():
         if st.button("Stop Trading"):
             st.session_state.trading_logic.stop_trading()
 
-    # Main content
+    # Main content area
     col1, col2 = st.columns([2, 1])
-    
+
     with col1:
         st.title("Market Data & Charts")
-        
+
         # Price chart
         fig = go.Figure()
         if hasattr(st.session_state.ib_client, 'price_data'):
@@ -75,10 +75,50 @@ def main():
             xaxis_title="Time"
         )
         st.plotly_chart(fig, use_container_width=True)
-    
+
+        # Trade Journal
+        st.title("Trade Journal")
+        trade_history = st.session_state.ib_client.get_trade_history()
+        if not trade_history.empty:
+            st.dataframe(
+                trade_history.sort_values('timestamp', ascending=False),
+                use_container_width=True
+            )
+
+            # Export buttons
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("Export to CSV"):
+                    filename = st.session_state.ib_client.export_trade_journal('csv')
+                    if filename:
+                        st.success(f"Trade journal exported to {filename}")
+            with col2:
+                if st.button("Export to JSON"):
+                    filename = st.session_state.ib_client.export_trade_journal('json')
+                    if filename:
+                        st.success(f"Trade journal exported to {filename}")
+
     with col2:
-        st.title("Position & P&L")
-        
+        st.title("Performance Metrics")
+
+        # Get metrics
+        metrics = st.session_state.ib_client.get_trade_metrics()
+
+        # Display metrics
+        st.metric("Total P&L", f"${metrics.get('total_pnl', 0):,.2f}")
+        st.metric("Win Rate", f"{metrics.get('win_rate', 0)*100:.1f}%")
+        st.metric("Total Trades", metrics.get('total_trades', 0))
+
+        # Detailed metrics
+        st.subheader("Detailed Metrics")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric("Winning Trades", metrics.get('winning_trades', 0))
+            st.metric("Avg Win", f"${metrics.get('avg_win', 0):,.2f}")
+        with col2:
+            st.metric("Losing Trades", metrics.get('losing_trades', 0))
+            st.metric("Avg Loss", f"${metrics.get('avg_loss', 0):,.2f}")
+
         # Current position
         position_df = st.session_state.ib_client.get_positions()
         st.dataframe(position_df)
@@ -86,7 +126,7 @@ def main():
         # P&L metrics
         st.metric("Daily P&L", f"${st.session_state.ib_client.get_daily_pnl():,.2f}")
         st.metric("Total P&L", f"${st.session_state.ib_client.get_total_pnl():,.2f}")
-    
+
     # Order book and execution
     st.title("Order Book")
     orders_df = st.session_state.ib_client.get_orders()
