@@ -2,6 +2,7 @@ import asyncio
 import nest_asyncio
 nest_asyncio.apply()
 
+# Initialize event loop at the very start
 try:
     loop = asyncio.get_event_loop()
 except RuntimeError:
@@ -96,8 +97,11 @@ def main():
                 st.error("Please connect to Interactive Brokers first!")
             else:
                 st.session_state.trading_logic.start_trading(symbol, quantity)
+                st.success(f"Started trading {symbol}")
+
         if st.button("Stop Trading"):
             st.session_state.trading_logic.stop_trading()
+            st.info("Trading stopped")
 
     # Main content area
     col1, col2 = st.columns([2, 1])
@@ -107,7 +111,7 @@ def main():
 
         # Price chart
         fig = go.Figure()
-        if hasattr(st.session_state.ib_client, 'price_data'):
+        if hasattr(st.session_state.ib_client, 'price_data') and st.session_state.ib_client.price_data:
             df = pd.DataFrame(st.session_state.ib_client.price_data)
             if not df.empty:
                 fig.add_trace(go.Candlestick(
