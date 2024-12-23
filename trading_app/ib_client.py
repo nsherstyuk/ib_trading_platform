@@ -4,6 +4,7 @@ from datetime import datetime
 import logging
 import asyncio
 import time
+import socket
 from logger import setup_logger
 from trade_journal import TradeJournal
 
@@ -30,8 +31,25 @@ class IBClient:
         self._connection_cooldown = 5  # seconds between connection attempts
         self._connection_retries = 3
 
+    def _test_port_connection(self, host, port):
+        """Test if the port is accepting connections"""
+        try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(5)
+            result = sock.connect_ex((host, port))
+            sock.close()
+            if result == 0:
+                logger.info(f"Port {port} is open and accepting connections")
+                return True
+            else:
+                logger.error(f"Port {port} is not accepting connections (Error code: {result})")
+                return False
+        except Exception as e:
+            logger.error(f"Error testing port connection: {str(e)}")
+            return False
+
     def connect(self, host='127.0.0.1', port=7497, client_id=1):
-        """Connect to Interactive Brokers TWS with retry mechanism"""
+        """Connect to Interactive Brokers TWS with enhanced diagnostics"""
         try:
             # Prevent rapid reconnection attempts
             current_time = time.time()
@@ -45,6 +63,25 @@ class IBClient:
                 logger.info("Already connected to IB")
                 return True
 
+            # Pre-connection diagnostics
+            logger.info("Running pre-connection diagnostics...")
+            logger.info(f"Testing connection to {host}:{port}")
+
+            # Test port connectivity
+            if not self._test_port_connection(host, port):
+                logger.error("""
+                Connection failed: TWS/Gateway port is not accessible.
+                Please verify:
+                1. TWS/Gateway is running
+                2. Configuration -> API -> Settings:
+                   - Socket port matches {port}
+                   - Enable Active X and Socket Clients is checked
+                   - Read-Only API is unchecked
+                3. You're using the correct port (7496 for live, 7497 for paper trading)
+                4. No firewall is blocking the connection
+                """)
+                return False
+
             # Ensure we're in the event loop
             try:
                 loop = asyncio.get_event_loop()
@@ -52,17 +89,12 @@ class IBClient:
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
 
-            logger.info(f"Attempting to connect to IB at {host}:{port} with client ID {client_id}")
-            logger.info("Please ensure TWS is running and API settings are configured:")
-            logger.info("1. TWS/Gateway is running and logged in")
-            logger.info("2. API settings enabled in TWS (Edit -> Global Configuration -> API)")
-            logger.info(f"3. Socket port {port} is set in TWS API settings")
-            logger.info("4. 'Enable ActiveX and Socket Clients' is checked")
-
-            # Try to connect with retries
+            # Connection attempt with retries
             for attempt in range(self._connection_retries):
                 try:
                     logger.info(f"Connection attempt {attempt + 1} of {self._connection_retries}")
+
+                    # Try to connect with a timeout
                     self.ib.connect(host, port, clientId=client_id, readonly=False, timeout=20)
 
                     # Verify connection
@@ -70,12 +102,20 @@ class IBClient:
                         logger.error(f"Connection attempt {attempt + 1} failed: IB reports not connected")
                         continue
 
+                    # Connection succeeded
                     self.connected = True
                     logger.info("Successfully connected to IB")
 
-                    # Test market data permissions
-                    contract = Stock('AAPL', 'SMART', 'USD')
+                    # Get TWS version info
                     try:
+                        version = self.ib.reqCurrentTime()
+                        logger.info(f"Connected to TWS/Gateway (Server time: {version})")
+                    except:
+                        logger.warning("Could not get TWS version info")
+
+                    # Test market data access
+                    try:
+                        contract = Stock('AAPL', 'SMART', 'USD')
                         self.ib.qualifyContracts(contract)
                         logger.info("Market data access verified")
                     except Exception as e:
@@ -84,19 +124,37 @@ class IBClient:
                     return True
 
                 except ConnectionRefusedError:
-                    logger.error(f"Connection attempt {attempt + 1} refused at {host}:{port}")
+                    logger.error(f"""
+                    Connection attempt {attempt + 1} refused at {host}:{port}
+                    This usually means:
+                    1. TWS/Gateway is not running
+                    2. API connections are not enabled
+                    3. The port number is incorrect
+                    4. TWS is still starting up
+                    """)
                     if attempt < self._connection_retries - 1:
                         logger.info("Waiting before retry...")
-                        time.sleep(2)  # Wait before retry
+                        time.sleep(2)
                     continue
+
                 except Exception as e:
                     logger.error(f"Connection attempt {attempt + 1} failed with error: {str(e)}")
                     if attempt < self._connection_retries - 1:
                         logger.info("Waiting before retry...")
-                        time.sleep(2)  # Wait before retry
+                        time.sleep(2)
                     continue
 
-            logger.error("All connection attempts failed. Please verify TWS is running and configured correctly")
+            logger.error("""
+            All connection attempts failed. Please verify:
+            1. TWS/Gateway is running and logged in
+            2. API settings in TWS:
+               - Edit -> Global Configuration -> API -> Settings
+               - Socket port matches the one you're using
+               - "Enable ActiveX and Socket Clients" is checked
+               - Read-Only API is unchecked
+            3. You're using the correct port (7496 for live, 7497 for paper trading)
+            4. No firewall is blocking the connection
+            """)
             return False
 
         except Exception as e:
