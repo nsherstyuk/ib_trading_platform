@@ -34,12 +34,15 @@ st.set_page_config(
 # Initialize session state
 if 'ib_client' not in st.session_state:
     st.session_state.ib_client = IBClient()
+    logger.info("Initialized new IBClient instance")
 if 'trading_logic' not in st.session_state:
     st.session_state.trading_logic = TradingLogic()
 if 'risk_manager' not in st.session_state:
     st.session_state.risk_manager = RiskManager()
 if 'show_instructions' not in st.session_state:
     st.session_state.show_instructions = False
+if 'last_connection_attempt' not in st.session_state:
+    st.session_state.last_connection_attempt = 0
 
 def main():
     # Sidebar
@@ -48,6 +51,13 @@ def main():
 
         # Connection Configuration
         st.subheader("IB Connection Settings")
+
+        # Connection status indicator
+        if st.session_state.ib_client.connected:
+            st.success("Connected to Interactive Brokers")
+        else:
+            st.warning("Not connected to Interactive Brokers")
+
         host = st.text_input("TWS/Gateway Host", value="127.0.0.1")
         port = st.number_input("TWS/Gateway Port", value=7497)
         client_id = st.number_input("Client ID", value=1)
@@ -63,16 +73,23 @@ def main():
 
         # Connection status and control
         if st.button("Connect to IB"):
-            config = IBConfig.from_env()
-            success = st.session_state.ib_client.connect(
-                host=config.host,
-                port=config.port,
-                client_id=config.client_id
-            )
-            if success:
-                st.success("Connected to Interactive Brokers!")
+            current_time = time.time()
+            if (current_time - st.session_state.last_connection_attempt) < 5:
+                st.error("Please wait a few seconds before trying to connect again")
             else:
-                st.error("Failed to connect. Please check TWS/Gateway and settings.")
+                st.session_state.last_connection_attempt = current_time
+                config = IBConfig.from_env()
+                with st.spinner("Connecting to Interactive Brokers..."):
+                    success = st.session_state.ib_client.connect(
+                        host=config.host,
+                        port=config.port,
+                        client_id=config.client_id
+                    )
+                    if success:
+                        st.success("Connected to Interactive Brokers!")
+                    else:
+                        st.error("Failed to connect. Please check TWS/Gateway and settings.")
+                        st.info("Click 'Show Connection Instructions' for help")
 
         # Show/Hide Instructions
         if st.button("Show Connection Instructions"):

@@ -1,0 +1,90 @@
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,599 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:50:12,601 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,514 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:52:07,516 - trading_app - ERROR - Failed to connect to IB: [Errno 111] Connect call failed ('127.0.0.1', 7497)
+2024-12-23 15:53:07,192 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,192 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,192 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,192 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,192 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,192 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,336 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:07,665 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance

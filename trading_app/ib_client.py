@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 import logging
 import asyncio
+import time
 from logger import setup_logger
 from trade_journal import TradeJournal
 
@@ -25,12 +26,23 @@ class IBClient:
             'volume': 0,
             'timestamp': None
         }
+        self._last_connection_attempt = 0
+        self._connection_cooldown = 5  # seconds between connection attempts
 
     def connect(self, host='127.0.0.1', port=7497, client_id=1):
-        """Connect to Interactive Brokers TWS"""
+        """Connect to Interactive Brokers TWS with retry mechanism"""
         try:
+            # Prevent rapid reconnection attempts
+            current_time = time.time()
+            if (current_time - self._last_connection_attempt) < self._connection_cooldown:
+                logger.warning("Connection attempt too soon after last attempt. Please wait.")
+                return False
+
+            self._last_connection_attempt = current_time
+
             if self.connected:
-                self.disconnect()
+                logger.info("Already connected to IB")
+                return True
 
             # Ensure we're in the event loop
             try:
@@ -40,10 +52,20 @@ class IBClient:
                 asyncio.set_event_loop(loop)
 
             logger.info(f"Connecting to IB at {host}:{port} with client ID {client_id}")
-            self.ib.connect(host, port, clientId=client_id, readonly=True)  # readonly for safety
-            self.connected = True
-            logger.info("Successfully connected to IB")
-            return True
+
+            # Try to connect with timeout
+            try:
+                self.ib.connect(host, port, clientId=client_id, readonly=True, timeout=20)
+                self.connected = True
+                logger.info("Successfully connected to IB")
+                return True
+            except ConnectionRefusedError:
+                logger.error("Connection refused. Please verify TWS is running and API connections are enabled.")
+                return False
+            except Exception as e:
+                logger.error(f"Connection failed: {str(e)}")
+                return False
+
         except Exception as e:
             logger.error(f"Failed to connect to IB: {str(e)}")
             return False
