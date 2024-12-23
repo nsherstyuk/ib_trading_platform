@@ -16,6 +16,14 @@ class IBClient:
         self.orders = {}
         self.trades = []
         self.trade_journal = TradeJournal()
+        self.current_bar = {
+            'open': None,
+            'high': None,
+            'low': None,
+            'close': None,
+            'volume': 0,
+            'timestamp': None
+        }
 
     def connect(self):
         """Connect to Interactive Brokers TWS"""
@@ -33,17 +41,37 @@ class IBClient:
         try:
             contract = Stock(symbol, 'SMART', 'USD')
             self.ib.qualifyContracts(contract)
-            
+
             def on_price_update(trade):
-                self.price_data.append({
-                    'timestamp': datetime.now(),
-                    'price': trade.price,
-                    'size': trade.size
-                })
-            
+                current_time = datetime.now()
+                price = trade.price
+                size = trade.size
+
+                # Initialize new bar if needed
+                if self.current_bar['timestamp'] is None or \
+                   (current_time - self.current_bar['timestamp']).seconds >= 60:  # 1-minute bars
+                    if self.current_bar['timestamp'] is not None:
+                        self.price_data.append(self.current_bar.copy())
+
+                    self.current_bar = {
+                        'open': price,
+                        'high': price,
+                        'low': price,
+                        'close': price,
+                        'volume': size,
+                        'timestamp': current_time
+                    }
+                else:
+                    # Update current bar
+                    self.current_bar['high'] = max(self.current_bar['high'], price)
+                    self.current_bar['low'] = min(self.current_bar['low'], price)
+                    self.current_bar['close'] = price
+                    self.current_bar['volume'] += size
+
             self.ib.reqMktData(contract, '', False, False)
             self.ib.pendingTickersEvent += on_price_update
-            
+            logger.info(f"Subscribed to market data for {symbol}")
+
         except Exception as e:
             logger.error(f"Error subscribing to market data: {str(e)}")
 
@@ -126,7 +154,7 @@ class IBClient:
     def get_current_price(self, symbol):
         """Get current market price for a symbol"""
         if self.price_data:
-            return self.price_data[-1].get('price', 0)
+            return self.price_data[-1].get('close', 0) # Use 'close' price for OHLC
         return 0
 
     def calculate_trade_pnl(self, symbol, quantity, action, current_price):
