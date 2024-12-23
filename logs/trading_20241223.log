@@ -12350,3 +12350,342 @@
 2024-12-23 17:13:56,749 - trading_app - INFO - Session state initialized successfully
 2024-12-23 17:13:56,749 - trading_app - INFO - Session state initialized successfully
 2024-12-23 17:13:56,749 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,746 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,748 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,755 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,756 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:18:10,757 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,958 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:50,960 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,528 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,529 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:20:57,530 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,593 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,594 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,595 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,601 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,603 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,604 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
+                
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:21:09,607 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 17:23:52,185 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:23:53,290 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:23:53,290 - trading_app - INFO - Successfully initialized async support
+2024-12-23 17:23:53,527 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:23:53,527 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:23:53,528 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:23:53,528 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,692 - trading_app - INFO - Successfully imported local modules
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,782 - trading_app - INFO - Initializing session state
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
+2024-12-23 17:23:53,796 - trading_app - INFO - Session state initialized successfully
