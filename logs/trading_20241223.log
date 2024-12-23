@@ -175,3 +175,265 @@
 2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
 2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
 2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,118 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,119 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,120 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,121 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:55:40,122 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:10,499 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,500 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,501 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,502 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,503 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,504 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:56:18,505 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,515 - trading_app - INFO - Attempting to connect to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,517 - trading_app - INFO - Please ensure TWS is running and API settings are configured:
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,518 - trading_app - INFO - 1. TWS/Gateway is running
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 2. API settings enabled in TWS (Edit -> Global Configuration -> API)
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,519 - trading_app - INFO - 3. Socket port 7497 is set in TWS API settings
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,520 - trading_app - INFO - 4. 'Enable ActiveX and Socket Clients' is checked
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:09,521 - trading_app - ERROR - Connection refused at 127.0.0.1:7497. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:57:31,020 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:57:31,020 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:57:31,020 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:57:31,020 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:57:31,020 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:57:31,020 - trading_app - INFO - Initialized new IBClient instance
