@@ -2,6 +2,7 @@ from ib_insync import *
 import pandas as pd
 from datetime import datetime
 import logging
+import asyncio
 from logger import setup_logger
 from trade_journal import TradeJournal
 
@@ -25,10 +26,21 @@ class IBClient:
             'timestamp': None
         }
 
-    def connect(self):
+    def connect(self, host='127.0.0.1', port=7497, client_id=1):
         """Connect to Interactive Brokers TWS"""
         try:
-            self.ib.connect('127.0.0.1', 7497, clientId=1)
+            if self.connected:
+                self.disconnect()
+
+            # Ensure we're in the event loop
+            try:
+                loop = asyncio.get_event_loop()
+            except RuntimeError:
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+
+            logger.info(f"Connecting to IB at {host}:{port} with client ID {client_id}")
+            self.ib.connect(host, port, clientId=client_id, readonly=True)  # readonly for safety
             self.connected = True
             logger.info("Successfully connected to IB")
             return True
@@ -114,35 +126,53 @@ class IBClient:
 
     def get_positions(self):
         """Get current positions"""
-        positions = self.ib.positions()
-        df = pd.DataFrame([
-            {
-                'symbol': p.contract.symbol,
-                'position': p.position,
-                'avg_cost': p.avgCost
-            } for p in positions
-        ])
-        return df
+        try:
+            positions = self.ib.positions()
+            df = pd.DataFrame([
+                {
+                    'symbol': p.contract.symbol,
+                    'position': p.position,
+                    'avg_cost': p.avgCost
+                } for p in positions
+            ])
+            return df
+        except Exception as e:
+            logger.error(f"Error getting positions: {str(e)}")
+            return pd.DataFrame()
 
     def get_orders(self):
         """Get order book"""
-        df = pd.DataFrame(self.orders).T
-        return df
+        try:
+            df = pd.DataFrame(self.orders).T
+            return df
+        except Exception as e:
+            logger.error(f"Error getting orders: {str(e)}")
+            return pd.DataFrame()
 
     def get_trades(self):
         """Get trade history"""
-        df = pd.DataFrame(self.trades)
-        return df
+        try:
+            df = pd.DataFrame(self.trades)
+            return df
+        except Exception as e:
+            logger.error(f"Error getting trades: {str(e)}")
+            return pd.DataFrame()
 
     def get_daily_pnl(self):
         """Get daily P&L"""
-        # Implementation depends on IB account structure
-        return 0.0
+        try:
+            return self.trade_journal.get_daily_performance().get(datetime.now().date(), 0.0)
+        except Exception as e:
+            logger.error(f"Error getting daily PnL: {str(e)}")
+            return 0.0
 
     def get_total_pnl(self):
         """Get total P&L"""
-        # Implementation depends on IB account structure
-        return 0.0
+        try:
+            return self.trade_journal.get_metrics().get('total_pnl', 0.0)
+        except Exception as e:
+            logger.error(f"Error getting total PnL: {str(e)}")
+            return 0.0
 
     def disconnect(self):
         """Disconnect from IB"""
@@ -178,12 +208,24 @@ class IBClient:
 
     def get_trade_metrics(self):
         """Get trading performance metrics"""
-        return self.trade_journal.get_metrics()
+        try:
+            return self.trade_journal.get_metrics()
+        except Exception as e:
+            logger.error(f"Error getting trade metrics: {str(e)}")
+            return {}
 
     def get_trade_history(self):
         """Get complete trade history"""
-        return self.trade_journal.get_trade_history()
+        try:
+            return self.trade_journal.get_trade_history()
+        except Exception as e:
+            logger.error(f"Error getting trade history: {str(e)}")
+            return pd.DataFrame()
 
     def export_trade_journal(self, format='csv'):
         """Export trade journal to file"""
-        return self.trade_journal.export_trade_journal(format)
+        try:
+            return self.trade_journal.export_trade_journal(format)
+        except Exception as e:
+            logger.error(f"Error exporting trade journal: {str(e)}")
+            return None
