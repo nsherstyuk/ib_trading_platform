@@ -62,93 +62,76 @@ class IBClient:
             'timestamp': current_time
         }
 
-    def _run_connection_diagnostics(self, host, port):
-        """Run comprehensive connection diagnostics"""
+    def _verify_tws_configuration(self, host, port):
+        """Verify TWS configuration and connectivity"""
         try:
-            logger.info(f"Running comprehensive connection diagnostics for {host}:{port}")
+            logger.info(f"Verifying TWS configuration on {host}:{port}")
 
-            # Test 1: Basic socket connection
-            logger.info("Test 1: Attempting basic socket connection...")
+            # Test TCP connection
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(5)
-            result = sock.connect_ex((host, port))
-            sock.close()
 
-            if result != 0:
-                error_msg = f"""
-                Basic socket connection failed (Error code: {result})
-                This indicates:
-                1. TWS/Gateway is not running, or
-                2. TWS/Gateway is not configured to accept connections, or
-                3. Wrong port number (should be 7497 for paper trading)
-
-                Current Status:
-                - Host: {host}
-                - Port: {port}
-                - Socket Error: {result}
-
-                Please verify:
-                1. TWS/Gateway is running (check Task Manager/Activity Monitor)
-                2. In TWS, go to Edit → Global Configuration → API
-                3. Confirm "Enable ActiveX and Socket Clients" is checked
-                4. Socket port should match {port}
-                """
-                logger.error(error_msg)
-                return False, error_msg
-
-            logger.info("Basic socket connection successful")
-
-            # Test 2: TWS API handshake simulation
-            logger.info("Test 2: Attempting API handshake simulation...")
+            # Try to establish connection
             try:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                sock.settimeout(5)
                 sock.connect((host, port))
+                logger.info("TCP connection successful")
 
-                # Send a minimal valid IB API handshake message
-                # "API\0" is the start of any valid TWS API connection
+                # Try basic API handshake
                 sock.send(b"API\0")
                 response = sock.recv(4096)
-                sock.close()
 
-                if not response:
+                if response:
+                    logger.info("TWS API handshake successful")
+                    sock.close()
+                    return True, "TWS connection and API configuration verified"
+                else:
                     error_msg = """
-                    TWS API handshake failed
-                    This indicates TWS is running but API connections are not properly configured
-
-                    Please verify in TWS:
-                    1. Edit → Global Configuration → API → Settings
-                    2. "Enable ActiveX and Socket Clients" is checked
-                    3. "Read-Only API" is unchecked
-                    4. Click Apply and OK
-                    5. Restart TWS after making these changes
+                    TWS is running but not responding to API requests.
+                    Please check in TWS:
+                    1. You are logged in to your paper trading account
+                    2. API Configuration under Edit → Global Configuration → API:
+                       - "Enable ActiveX and Socket Clients" is checked
+                       - Socket port is set to 7497
+                       - "Read-Only API" is unchecked
+                    3. Try restarting TWS after making any changes
                     """
                     logger.error(error_msg)
                     return False, error_msg
 
-            except Exception as e:
-                error_msg = f"""
-                API handshake simulation failed: {str(e)}
-                This could indicate TWS is not properly handling API connections
-
-                Please try:
-                1. Restart TWS/Gateway
-                2. Verify API configuration settings
-                3. If using TWS Paper Trading, confirm you're using port 7497
+            except ConnectionRefusedError:
+                error_msg = """
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
                 """
                 logger.error(error_msg)
                 return False, error_msg
 
-            logger.info("All diagnostic tests passed successfully")
-            return True, "Connection diagnostics passed successfully"
+            except socket.timeout:
+                error_msg = """
+                Connection attempt timed out.
+                This could mean:
+                1. TWS is not responding
+                2. A firewall is blocking the connection
+                3. TWS API connections are disabled
+                """
+                logger.error(error_msg)
+                return False, error_msg
 
         except Exception as e:
-            error_msg = f"Diagnostic error: {str(e)}"
+            error_msg = f"TWS configuration verification failed: {str(e)}"
             logger.error(error_msg)
             return False, error_msg
+        finally:
+            try:
+                sock.close()
+            except:
+                pass
 
     def connect(self, host='127.0.0.1', port=7497, client_id=1):
-        """Connect to Interactive Brokers TWS or enter simulation mode"""
+        """Connect to Interactive Brokers TWS with enhanced verification"""
         try:
             if self.simulation_mode:
                 self.connected = True
@@ -164,19 +147,21 @@ class IBClient:
             if self.connected:
                 return True, "Already connected to IB"
 
-            logger.info(f"Starting connection process to {host}:{port}")
+            logger.info(f"Verifying TWS configuration on {host}:{port}")
 
-            # Run comprehensive diagnostics first
-            diag_success, diag_message = self._run_connection_diagnostics(host, port)
-            if not diag_success:
-                return False, diag_message
+            # First verify TWS configuration
+            success, message = self._verify_tws_configuration(host, port)
+            if not success:
+                return False, message
 
+            # If verification passed, attempt full connection
             try:
                 loop = asyncio.get_event_loop()
             except RuntimeError:
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
 
+            # Attempt connection with retries
             for attempt in range(self._connection_retries):
                 try:
                     logger.info(f"Connection attempt {attempt + 1} of {self._connection_retries}")
@@ -189,7 +174,6 @@ class IBClient:
 
                     self.connected = True
                     logger.info("Successfully connected to IB")
-
                     try:
                         contract = Stock('AAPL', 'SMART', 'USD')
                         self.ib.qualifyContracts(contract)
@@ -197,48 +181,17 @@ class IBClient:
                     except Exception as e:
                         return True, f"Connected, but market data access limited: {str(e)}"
 
-                except ConnectionRefusedError:
-                    if attempt == self._connection_retries - 1:
-                        error_msg = f"""
-                        Connection refused at {host}:{port}
-                        This usually means:
-                        1. TWS/Gateway is not running
-                        2. API connections are not enabled
-                        3. The port number is incorrect
-                        4. TWS is still starting up
-                        """
-                        return False, error_msg
-                    time.sleep(2)
-                    continue
-
                 except Exception as e:
                     if attempt == self._connection_retries - 1:
                         return False, f"Connection error: {str(e)}"
                     time.sleep(2)
                     continue
 
-            return False, "All connection attempts failed. Please verify TWS is running and configured correctly"
+            return False, "All connection attempts failed"
 
         except Exception as e:
             logger.error(f"Critical error during connection process: {str(e)}")
             return False, f"Critical connection error: {str(e)}"
-
-    def _test_port_connection(self, host, port):
-        """Test if the port is accepting connections"""
-        try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(5)
-            result = sock.connect_ex((host, port))
-            sock.close()
-            if result == 0:
-                logger.info(f"Port {port} is open and accepting connections")
-                return True
-            else:
-                logger.error(f"Port {port} is not accepting connections (Error code: {result})")
-                return False
-        except Exception as e:
-            logger.error(f"Error testing port connection: {str(e)}")
-            return False
 
     def subscribe_market_data(self, symbol):
         """Subscribe to real-time market data or generate simulated data"""
