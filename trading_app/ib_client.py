@@ -1,19 +1,21 @@
 from ib_insync import IB, Stock, MarketOrder
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import logging
 import asyncio
 import time
 import socket
+import numpy as np
 from logger import setup_logger
 from trade_journal import TradeJournal
 
 logger = setup_logger()
 
 class IBClient:
-    def __init__(self):
+    def __init__(self, simulation_mode=False):
         self.ib = IB()
         self.connected = False
+        self.simulation_mode = simulation_mode
         self.price_data = []
         self.positions = {}
         self.orders = {}
@@ -28,30 +30,46 @@ class IBClient:
             'timestamp': None
         }
         self._last_connection_attempt = 0
-        self._connection_cooldown = 5  # seconds between connection attempts
+        self._connection_cooldown = 5
         self._connection_retries = 3
 
-    def _test_port_connection(self, host, port):
-        """Test if the port is accepting connections"""
-        try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(5)
-            result = sock.connect_ex((host, port))
-            sock.close()
-            if result == 0:
-                logger.info(f"Port {port} is open and accepting connections")
-                return True
-            else:
-                logger.error(f"Port {port} is not accepting connections (Error code: {result})")
-                return False
-        except Exception as e:
-            logger.error(f"Error testing port connection: {str(e)}")
-            return False
+        # Simulation data
+        self._sim_price = 100.0
+        self._sim_last_update = datetime.now()
+
+    def _generate_simulated_price(self):
+        """Generate simulated price movement"""
+        if not self.price_data:
+            self._sim_price = 100.0
+        else:
+            # Random walk with mean reversion
+            change = np.random.normal(0, 0.1)
+            mean_reversion = (100 - self._sim_price) * 0.1
+            self._sim_price += change + mean_reversion
+
+        current_time = datetime.now()
+
+        # Generate OHLC data
+        high = self._sim_price * (1 + abs(np.random.normal(0, 0.001)))
+        low = self._sim_price * (1 - abs(np.random.normal(0, 0.001)))
+
+        return {
+            'open': self.price_data[-1]['close'] if self.price_data else self._sim_price,
+            'high': high,
+            'low': low,
+            'close': self._sim_price,
+            'volume': int(np.random.normal(1000, 200)),
+            'timestamp': current_time
+        }
 
     def connect(self, host='127.0.0.1', port=7497, client_id=1):
-        """Connect to Interactive Brokers TWS with enhanced diagnostics"""
+        """Connect to Interactive Brokers TWS or enter simulation mode"""
         try:
-            # Prevent rapid reconnection attempts
+            if self.simulation_mode:
+                self.connected = True
+                logger.info("Started in simulation mode")
+                return True, "Connected in simulation mode"
+
             current_time = time.time()
             if (current_time - self._last_connection_attempt) < self._connection_cooldown:
                 return False, "Please wait a few seconds before trying to connect again"
@@ -61,11 +79,9 @@ class IBClient:
             if self.connected:
                 return True, "Already connected to IB"
 
-            # Pre-connection diagnostics
             logger.info("Running pre-connection diagnostics...")
             logger.info(f"Testing connection to {host}:{port}")
 
-            # Test port connectivity
             if not self._test_port_connection(host, port):
                 error_msg = f"""
                 TWS/Gateway port {port} is not accessible.
@@ -81,14 +97,12 @@ class IBClient:
                 logger.error(error_msg)
                 return False, error_msg
 
-            # Ensure we're in the event loop
             try:
                 loop = asyncio.get_event_loop()
             except RuntimeError:
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
 
-            # Connection attempt with retries
             for attempt in range(self._connection_retries):
                 try:
                     logger.info(f"Connection attempt {attempt + 1} of {self._connection_retries}")
@@ -102,7 +116,6 @@ class IBClient:
                     self.connected = True
                     logger.info("Successfully connected to IB")
 
-                    # Test market data access
                     try:
                         contract = Stock('AAPL', 'SMART', 'USD')
                         self.ib.qualifyContracts(contract)
@@ -136,9 +149,32 @@ class IBClient:
             logger.error(f"Critical error during connection process: {str(e)}")
             return False, f"Critical connection error: {str(e)}"
 
-    def subscribe_market_data(self, symbol):
-        """Subscribe to real-time market data"""
+    def _test_port_connection(self, host, port):
+        """Test if the port is accepting connections"""
         try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(5)
+            result = sock.connect_ex((host, port))
+            sock.close()
+            if result == 0:
+                logger.info(f"Port {port} is open and accepting connections")
+                return True
+            else:
+                logger.error(f"Port {port} is not accepting connections (Error code: {result})")
+                return False
+        except Exception as e:
+            logger.error(f"Error testing port connection: {str(e)}")
+            return False
+
+    def subscribe_market_data(self, symbol):
+        """Subscribe to real-time market data or generate simulated data"""
+        try:
+            if self.simulation_mode:
+                # Start with initial simulated data point
+                if not self.price_data:
+                    self.price_data.append(self._generate_simulated_price())
+                return True
+
             contract = Stock(symbol, 'SMART', 'USD')
             self.ib.qualifyContracts(contract)
 
@@ -147,9 +183,8 @@ class IBClient:
                 price = trade.price
                 size = trade.size
 
-                # Initialize new bar if needed
                 if self.current_bar['timestamp'] is None or \
-                   (current_time - self.current_bar['timestamp']).seconds >= 60:  # 1-minute bars
+                   (current_time - self.current_bar['timestamp']).seconds >= 60:
                     if self.current_bar['timestamp'] is not None:
                         self.price_data.append(self.current_bar.copy())
 
@@ -162,7 +197,6 @@ class IBClient:
                         'timestamp': current_time
                     }
                 else:
-                    # Update current bar
                     self.current_bar['high'] = max(self.current_bar['high'], price)
                     self.current_bar['low'] = min(self.current_bar['low'], price)
                     self.current_bar['close'] = price
@@ -171,9 +205,19 @@ class IBClient:
             self.ib.reqMktData(contract, '', False, False)
             self.ib.pendingTickersEvent += on_price_update
             logger.info(f"Subscribed to market data for {symbol}")
+            return True
 
         except Exception as e:
             logger.error(f"Error subscribing to market data: {str(e)}")
+            return False
+
+    def update_simulated_data(self):
+        """Update simulated market data"""
+        if self.simulation_mode and self.connected:
+            current_time = datetime.now()
+            if not self.price_data or \
+               (current_time - self.price_data[-1]['timestamp']).seconds >= 60:
+                self.price_data.append(self._generate_simulated_price())
 
     def place_order(self, symbol, quantity, action, order_type='MKT'):
         """Place a new order"""
@@ -184,7 +228,6 @@ class IBClient:
 
             trade = self.ib.placeOrder(contract, order)
 
-            # Store order details
             order_id = trade.order.orderId
             self.orders[order_id] = {
                 'symbol': symbol,
@@ -194,7 +237,6 @@ class IBClient:
                 'timestamp': datetime.now()
             }
 
-            # Log the trade
             current_price = self.get_current_price(symbol)
             trade_data = {
                 'symbol': symbol,
@@ -272,7 +314,7 @@ class IBClient:
     def get_current_price(self, symbol):
         """Get current market price for a symbol"""
         if self.price_data:
-            return self.price_data[-1].get('close', 0) # Use 'close' price for OHLC
+            return self.price_data[-1].get('close', 0)
         return 0
 
     def calculate_trade_pnl(self, symbol, quantity, action, current_price):
@@ -283,7 +325,7 @@ class IBClient:
 
         avg_cost = position.get('avg_cost', current_price)
         if action == 'BUY':
-            return 0  # P&L calculated on close
+            return 0
         else:
             return (current_price - avg_cost) * quantity
 
