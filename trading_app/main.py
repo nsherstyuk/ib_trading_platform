@@ -117,7 +117,7 @@ def main():
                     config = IBConfig.from_env()
                     with st.spinner("Connecting to Interactive Brokers..."):
                         try:
-                            success = st.session_state.ib_client.connect(
+                            success, message = st.session_state.ib_client.connect(
                                 host=config.host,
                                 port=config.port,
                                 client_id=config.client_id
@@ -125,12 +125,11 @@ def main():
                             if success:
                                 st.session_state.connection_status['connected'] = True
                                 st.session_state.connection_status['last_error'] = None
-                                st.success("Connected to Interactive Brokers!")
+                                st.success(message)
                                 logger.info("Successfully connected to Interactive Brokers")
                             else:
-                                error_msg = "Failed to connect. Please check TWS/Gateway and settings."
-                                st.session_state.connection_status['last_error'] = error_msg
-                                st.error(error_msg)
+                                st.session_state.connection_status['last_error'] = message
+                                st.error(message)
                                 st.info("Click 'Show Connection Instructions' for help")
                                 logger.error("Failed to establish IB connection")
                         except Exception as e:

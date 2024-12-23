@@ -54,14 +54,12 @@ class IBClient:
             # Prevent rapid reconnection attempts
             current_time = time.time()
             if (current_time - self._last_connection_attempt) < self._connection_cooldown:
-                logger.warning("Connection attempt too soon after last attempt. Please wait.")
-                return False
+                return False, "Please wait a few seconds before trying to connect again"
 
             self._last_connection_attempt = current_time
 
             if self.connected:
-                logger.info("Already connected to IB")
-                return True
+                return True, "Already connected to IB"
 
             # Pre-connection diagnostics
             logger.info("Running pre-connection diagnostics...")
@@ -69,18 +67,19 @@ class IBClient:
 
             # Test port connectivity
             if not self._test_port_connection(host, port):
-                logger.error("""
-                Connection failed: TWS/Gateway port is not accessible.
+                error_msg = f"""
+                TWS/Gateway port {port} is not accessible.
                 Please verify:
-                1. TWS/Gateway is running
-                2. Configuration -> API -> Settings:
+                1. TWS/Gateway is running and logged in
+                2. API settings in TWS:
+                   - Edit -> Global Configuration -> API -> Settings
                    - Socket port matches {port}
                    - Enable Active X and Socket Clients is checked
-                   - Read-Only API is unchecked
-                3. You're using the correct port (7496 for live, 7497 for paper trading)
+                3. You're using the correct port (7497 for paper trading, 7496 for live)
                 4. No firewall is blocking the connection
-                """)
-                return False
+                """
+                logger.error(error_msg)
+                return False, error_msg
 
             # Ensure we're in the event loop
             try:
@@ -93,73 +92,49 @@ class IBClient:
             for attempt in range(self._connection_retries):
                 try:
                     logger.info(f"Connection attempt {attempt + 1} of {self._connection_retries}")
-
-                    # Try to connect with a timeout
                     self.ib.connect(host, port, clientId=client_id, readonly=False, timeout=20)
 
-                    # Verify connection
                     if not self.ib.isConnected():
-                        logger.error(f"Connection attempt {attempt + 1} failed: IB reports not connected")
+                        if attempt == self._connection_retries - 1:
+                            return False, f"Connection attempt {attempt + 1} failed: TWS reports not connected"
                         continue
 
-                    # Connection succeeded
                     self.connected = True
                     logger.info("Successfully connected to IB")
-
-                    # Get TWS version info
-                    try:
-                        version = self.ib.reqCurrentTime()
-                        logger.info(f"Connected to TWS/Gateway (Server time: {version})")
-                    except:
-                        logger.warning("Could not get TWS version info")
 
                     # Test market data access
                     try:
                         contract = Stock('AAPL', 'SMART', 'USD')
                         self.ib.qualifyContracts(contract)
-                        logger.info("Market data access verified")
+                        return True, "Successfully connected to Interactive Brokers"
                     except Exception as e:
-                        logger.warning(f"Market data access check failed: {str(e)}")
-
-                    return True
+                        return True, f"Connected, but market data access limited: {str(e)}"
 
                 except ConnectionRefusedError:
-                    logger.error(f"""
-                    Connection attempt {attempt + 1} refused at {host}:{port}
-                    This usually means:
-                    1. TWS/Gateway is not running
-                    2. API connections are not enabled
-                    3. The port number is incorrect
-                    4. TWS is still starting up
-                    """)
-                    if attempt < self._connection_retries - 1:
-                        logger.info("Waiting before retry...")
-                        time.sleep(2)
+                    if attempt == self._connection_retries - 1:
+                        error_msg = f"""
+                        Connection refused at {host}:{port}
+                        This usually means:
+                        1. TWS/Gateway is not running
+                        2. API connections are not enabled
+                        3. The port number is incorrect
+                        4. TWS is still starting up
+                        """
+                        return False, error_msg
+                    time.sleep(2)
                     continue
 
                 except Exception as e:
-                    logger.error(f"Connection attempt {attempt + 1} failed with error: {str(e)}")
-                    if attempt < self._connection_retries - 1:
-                        logger.info("Waiting before retry...")
-                        time.sleep(2)
+                    if attempt == self._connection_retries - 1:
+                        return False, f"Connection error: {str(e)}"
+                    time.sleep(2)
                     continue
 
-            logger.error("""
-            All connection attempts failed. Please verify:
-            1. TWS/Gateway is running and logged in
-            2. API settings in TWS:
-               - Edit -> Global Configuration -> API -> Settings
-               - Socket port matches the one you're using
-               - "Enable ActiveX and Socket Clients" is checked
-               - Read-Only API is unchecked
-            3. You're using the correct port (7496 for live, 7497 for paper trading)
-            4. No firewall is blocking the connection
-            """)
-            return False
+            return False, "All connection attempts failed. Please verify TWS is running and configured correctly"
 
         except Exception as e:
             logger.error(f"Critical error during connection process: {str(e)}")
-            return False
+            return False, f"Critical connection error: {str(e)}"
 
     def subscribe_market_data(self, symbol):
         """Subscribe to real-time market data"""
