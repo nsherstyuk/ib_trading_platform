@@ -88,3 +88,90 @@
 2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
 2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
 2024-12-23 15:53:09,199 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:17,961 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,273 - trading_app - INFO - Connecting to IB at 127.0.0.1:7497 with client ID 1
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:53:50,276 - trading_app - ERROR - Connection refused. Please verify TWS is running and API connections are enabled.
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,351 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:54:51,782 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,201 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,201 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,201 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,201 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,201 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,201 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:01,838 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:02,202 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance
+2024-12-23 15:55:04,987 - trading_app - INFO - Initialized new IBClient instance

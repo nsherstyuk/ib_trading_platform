@@ -51,19 +51,41 @@ class IBClient:
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
 
-            logger.info(f"Connecting to IB at {host}:{port} with client ID {client_id}")
+            logger.info(f"Attempting to connect to IB at {host}:{port} with client ID {client_id}")
+            logger.info("Please ensure TWS is running and API settings are configured:")
+            logger.info("1. TWS/Gateway is running")
+            logger.info("2. API settings enabled in TWS (Edit -> Global Configuration -> API)")
+            logger.info(f"3. Socket port {port} is set in TWS API settings")
+            logger.info("4. 'Enable ActiveX and Socket Clients' is checked")
 
-            # Try to connect with timeout
+            # Try to connect with timeout and detailed error handling
             try:
-                self.ib.connect(host, port, clientId=client_id, readonly=True, timeout=20)
+                self.ib.connect(host, port, clientId=client_id, readonly=False, timeout=20)
+
+                # Verify connection
+                if not self.ib.isConnected():
+                    logger.error("Connection failed: IB reports not connected after connect() call")
+                    return False
+
                 self.connected = True
                 logger.info("Successfully connected to IB")
+
+                # Test market data permissions
+                contract = Stock('AAPL', 'SMART', 'USD')
+                try:
+                    self.ib.qualifyContracts(contract)
+                    logger.info("Market data access verified")
+                except Exception as e:
+                    logger.warning(f"Market data access check failed: {str(e)}")
+
                 return True
+
             except ConnectionRefusedError:
-                logger.error("Connection refused. Please verify TWS is running and API connections are enabled.")
+                logger.error(f"Connection refused at {host}:{port}. Please verify TWS is running and API connections are enabled.")
                 return False
             except Exception as e:
-                logger.error(f"Connection failed: {str(e)}")
+                logger.error(f"Connection failed with error: {str(e)}")
+                logger.error("Please check TWS logs for additional details")
                 return False
 
         except Exception as e:
