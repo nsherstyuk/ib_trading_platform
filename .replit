@@ -5,7 +5,7 @@ channel = "stable-24_05"
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["sh", "-c", "streamlit run trading_app/main.py"]
+run = ["sh", "-c", "python3.11 -m streamlit run trading_app/main.py"]
 
 [workflows]
 runButton = "Project"
@@ -31,7 +31,7 @@ task = "packager.installForAll"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "streamlit run trading_app/main.py"
+args = "python3.11 -m streamlit run trading_app/main.py"
 waitForPort = 5000
 
 [[ports]]
