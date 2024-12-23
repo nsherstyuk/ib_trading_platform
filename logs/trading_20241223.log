@@ -11192,3 +11192,367 @@
 2024-12-23 16:52:25,679 - trading_app - INFO - Session state initialized successfully
 2024-12-23 16:52:25,679 - trading_app - INFO - Session state initialized successfully
 2024-12-23 16:52:25,679 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,638 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,639 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,640 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,641 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,642 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:05,645 - trading_app - ERROR - Critical error in main function: module 'streamlit' has no attribute 'experimental_rerun'
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,423 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,424 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,425 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,426 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:07,427 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,469 - trading_app - INFO - Python Path: ['trading_app/main.py', 'trading_app', '/home/runner/StockTradeAnalyzer/.pythonlibs/bin', '/nix/store/wjh5dp8cqvlaxs7yxmy9amn19d54r9nb-sitecustomize/lib/python/site-packages', '/nix/store/dfg63lldbvcj207iyr9z0xw21d8ax02n-python3.11-pip-24.0/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python311.zip', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/lib-dynload', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/site-packages', '/home/runner/StockTradeAnalyzer/.pythonlibs/lib/python3.11/site-packages', '/nix/store/wblvmd5y7izx0z10d1w7ga7zc4apjxmb-python3.11-setuptools-75.1.1/lib/python3.11/site-packages']
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,475 - trading_app - INFO - Current working directory: /home/runner/StockTradeAnalyzer
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,476 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,477 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,478 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,494 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,500 - trading_app - INFO - Verifying TWS configuration on 127.0.0.1:7497
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,503 - trading_app - ERROR - 
+                Connection was refused by TWS.
+                This usually means:
+                1. TWS is not running (check Task Manager/Activity Monitor)
+                2. TWS is still starting up
+                3. Wrong port number (should be 7497 for paper trading)
+                
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:53:19,508 - trading_app - ERROR - Failed to establish IB connection
+2024-12-23 16:54:20,128 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:20,883 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:20,992 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:20,992 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:20,992 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:20,992 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:20,992 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:20,992 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,119 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,119 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,119 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,119 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,119 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,119 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,123 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,123 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,123 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,123 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,123 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,123 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,731 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,732 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:21,734 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully initialized async support
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,284 - trading_app - INFO - Successfully imported main dependencies
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,285 - trading_app - INFO - Successfully imported local modules
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,286 - trading_app - INFO - Initializing session state
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully
+2024-12-23 16:54:22,302 - trading_app - INFO - Session state initialized successfully

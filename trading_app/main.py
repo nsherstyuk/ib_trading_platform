@@ -6,10 +6,6 @@ from logger import setup_logger
 # Setup logging first
 logger = setup_logger()
 
-# Log Python path and environment for debugging
-logger.info(f"Python Path: {sys.path}")
-logger.info(f"Current working directory: {os.getcwd()}")
-
 try:
     import asyncio
     import nest_asyncio
@@ -25,6 +21,7 @@ try:
     import plotly.graph_objects as go
     from datetime import datetime
     import time
+    import json
     logger.info("Successfully imported main dependencies")
 except ImportError as e:
     logger.error(f"Failed to import main dependencies: {str(e)}")
@@ -190,93 +187,109 @@ def main():
             # Price chart
             fig = go.Figure()
             if hasattr(st.session_state.ib_client, 'price_data') and st.session_state.ib_client.price_data:
-                df = pd.DataFrame(st.session_state.ib_client.price_data)
-                if not df.empty:
-                    fig.add_trace(go.Candlestick(
-                        x=df['timestamp'],
-                        open=df['open'],
-                        high=df['high'],
-                        low=df['low'],
-                        close=df['close']
-                    ))
+                try:
+                    df = pd.DataFrame(st.session_state.ib_client.price_data)
+                    if not df.empty:
+                        fig.add_trace(go.Candlestick(
+                            x=df['timestamp'].apply(lambda x: x.strftime('%Y-%m-%d %H:%M:%S')),
+                            open=df['open'],
+                            high=df['high'],
+                            low=df['low'],
+                            close=df['close']
+                        ))
 
-            fig.update_layout(
-                title="Price Chart",
-                yaxis_title="Price",
-                xaxis_title="Time"
-            )
+                        fig.update_layout(
+                            title="Price Chart",
+                            yaxis_title="Price",
+                            xaxis_title="Time"
+                        )
+                except Exception as e:
+                    logger.error(f"Error creating price chart: {str(e)}")
+                    st.error("Error creating price chart")
+
             st.plotly_chart(fig, use_container_width=True)
 
             # Trade Journal
             st.title("Trade Journal")
-            trade_history = st.session_state.ib_client.get_trade_history()
-            if not isinstance(trade_history, pd.DataFrame):
-                trade_history = pd.DataFrame()
+            try:
+                trade_history = st.session_state.ib_client.get_trade_history()
+                if isinstance(trade_history, pd.DataFrame) and not trade_history.empty:
+                    st.dataframe(
+                        trade_history.sort_values('timestamp', ascending=False),
+                        use_container_width=True
+                    )
 
-            if not trade_history.empty:
-                st.dataframe(
-                    trade_history.sort_values('timestamp', ascending=False),
-                    use_container_width=True
-                )
-
-                # Export buttons
-                col1, col2 = st.columns(2)
-                with col1:
-                    if st.button("Export to CSV"):
-                        filename = st.session_state.ib_client.export_trade_journal('csv')
-                        if filename:
-                            st.success(f"Trade journal exported to {filename}")
-                with col2:
-                    if st.button("Export to JSON"):
-                        filename = st.session_state.ib_client.export_trade_journal('json')
-                        if filename:
-                            st.success(f"Trade journal exported to {filename}")
+                    # Export buttons
+                    col1, col2 = st.columns(2)
+                    with col1:
+                        if st.button("Export to CSV"):
+                            filename = st.session_state.ib_client.export_trade_journal('csv')
+                            if filename:
+                                st.success(f"Trade journal exported to {filename}")
+                    with col2:
+                        if st.button("Export to JSON"):
+                            filename = st.session_state.ib_client.export_trade_journal('json')
+                            if filename:
+                                st.success(f"Trade journal exported to {filename}")
+            except Exception as e:
+                logger.error(f"Error displaying trade journal: {str(e)}")
+                st.error("Error displaying trade journal")
 
         with col2:
             st.title("Performance Metrics")
 
-            # Get metrics
-            metrics = st.session_state.ib_client.get_trade_metrics()
+            try:
+                # Get metrics
+                metrics = st.session_state.ib_client.get_trade_metrics()
 
-            # Display metrics
-            st.metric("Total P&L", f"${metrics.get('total_pnl', 0):,.2f}")
-            st.metric("Win Rate", f"{metrics.get('win_rate', 0)*100:.1f}%")
-            st.metric("Total Trades", metrics.get('total_trades', 0))
+                # Display metrics
+                st.metric("Total P&L", f"${metrics.get('total_pnl', 0):,.2f}")
+                st.metric("Win Rate", f"{metrics.get('win_rate', 0)*100:.1f}%")
+                st.metric("Total Trades", metrics.get('total_trades', 0))
 
-            # Detailed metrics
-            st.subheader("Detailed Metrics")
-            col1, col2 = st.columns(2)
-            with col1:
-                st.metric("Winning Trades", metrics.get('winning_trades', 0))
-                st.metric("Avg Win", f"${metrics.get('avg_win', 0):,.2f}")
-            with col2:
-                st.metric("Losing Trades", metrics.get('losing_trades', 0))
-                st.metric("Avg Loss", f"${metrics.get('avg_loss', 0):,.2f}")
+                # Detailed metrics
+                st.subheader("Detailed Metrics")
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.metric("Winning Trades", metrics.get('winning_trades', 0))
+                    st.metric("Avg Win", f"${metrics.get('avg_win', 0):,.2f}")
+                with col2:
+                    st.metric("Losing Trades", metrics.get('losing_trades', 0))
+                    st.metric("Avg Loss", f"${metrics.get('avg_loss', 0):,.2f}")
 
-            # Current position
-            st.subheader("Current Positions")
-            position_df = st.session_state.ib_client.get_positions()
-            if not isinstance(position_df, pd.DataFrame):
-                position_df = pd.DataFrame()
-            st.dataframe(position_df)
+                # Current position
+                st.subheader("Current Positions")
+                position_df = st.session_state.ib_client.get_positions()
+                if isinstance(position_df, pd.DataFrame):
+                    st.dataframe(position_df)
 
-            # P&L metrics
-            st.metric("Daily P&L", f"${st.session_state.ib_client.get_daily_pnl():,.2f}")
-            st.metric("Total P&L", f"${st.session_state.ib_client.get_total_pnl():,.2f}")
+                # P&L metrics
+                st.metric("Daily P&L", f"${st.session_state.ib_client.get_daily_pnl():,.2f}")
+                st.metric("Total P&L", f"${st.session_state.ib_client.get_total_pnl():,.2f}")
+
+            except Exception as e:
+                logger.error(f"Error displaying performance metrics: {str(e)}")
+                st.error("Error displaying performance metrics")
 
         # Order book and execution
         st.title("Order Book")
-        orders_df = st.session_state.ib_client.get_orders()
-        if not isinstance(orders_df, pd.DataFrame):
-            orders_df = pd.DataFrame()
-        st.dataframe(orders_df)
+        try:
+            orders_df = st.session_state.ib_client.get_orders()
+            if isinstance(orders_df, pd.DataFrame):
+                st.dataframe(orders_df)
+        except Exception as e:
+            logger.error(f"Error displaying order book: {str(e)}")
+            st.error("Error displaying order book")
 
         # Trade log
         st.title("Trade Log")
-        trades_df = st.session_state.ib_client.get_trades()
-        if not isinstance(trades_df, pd.DataFrame):
-            trades_df = pd.DataFrame()
-        st.dataframe(trades_df)
+        try:
+            trades_df = st.session_state.ib_client.get_trades()
+            if isinstance(trades_df, pd.DataFrame):
+                st.dataframe(trades_df)
+        except Exception as e:
+            logger.error(f"Error displaying trade log: {str(e)}")
+            st.error("Error displaying trade log")
 
     except Exception as e:
         logger.error(f"Critical error in main function: {str(e)}")
