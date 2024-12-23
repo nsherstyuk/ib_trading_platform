@@ -77,6 +77,19 @@ def main():
 
             # Mode Selection
             st.subheader("Trading Mode")
+            paper_trading = st.checkbox("Paper Trading Mode", value=True)
+
+            if not paper_trading:
+                st.warning("⚠️ LIVE TRADING MODE")
+                st.error("""
+                This will connect to LIVE TRADING.
+                Real money will be at risk.
+                Are you sure you want to proceed?
+                """)
+                confirm_live = st.checkbox("Yes, I understand the risks")
+                if not confirm_live:
+                    paper_trading = True
+
             simulation_mode = st.checkbox("Simulation Mode", value=st.session_state.simulation_mode)
             if simulation_mode != st.session_state.simulation_mode:
                 st.session_state.simulation_mode = simulation_mode
@@ -86,6 +99,10 @@ def main():
 
             # Connection Configuration
             st.subheader("IB Connection Settings")
+
+            # Display current trading mode status
+            config = IBConfig.from_env()
+            st.markdown(config.get_trading_mode_warning())
 
             # Connection status indicator with detailed state
             conn_status = st.session_state.connection_status
@@ -97,9 +114,9 @@ def main():
                     st.error(f"Last error: {conn_status['last_error']}")
 
             host = st.text_input("TWS/Gateway Host", value="127.0.0.1")
-            port = st.number_input("TWS/Gateway Port", value=7497)
+            port = 7497 if paper_trading else 7496
+            st.info(f"Port: {port} ({'Paper' if paper_trading else 'Live'} Trading)")
             client_id = st.number_input("Client ID", value=1)
-            is_paper_trading = st.checkbox("Paper Trading Mode", value=True)
 
             # Save configuration button
             if st.button("Save Configuration"):
@@ -107,7 +124,7 @@ def main():
                     os.environ['IB_HOST'] = host
                     os.environ['IB_PORT'] = str(port)
                     os.environ['IB_CLIENT_ID'] = str(client_id)
-                    os.environ['IB_PAPER_TRADING'] = str(is_paper_trading).lower()
+                    os.environ['IB_PAPER_TRADING'] = str(paper_trading).lower()
                     st.success("Configuration saved!")
                     logger.info("Trading configuration updated")
                 except Exception as e:
