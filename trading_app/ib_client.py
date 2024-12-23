@@ -12,10 +12,9 @@ from trade_journal import TradeJournal
 logger = setup_logger()
 
 class IBClient:
-    def __init__(self, simulation_mode=False):
+    def __init__(self):
         self.ib = IB()
         self.connected = False
-        self.simulation_mode = simulation_mode
         self.price_data = []
         self.positions = {}
         self.orders = {}
@@ -32,35 +31,6 @@ class IBClient:
         self._last_connection_attempt = 0
         self._connection_cooldown = 5
         self._connection_retries = 3
-
-        # Simulation data
-        self._sim_price = 100.0
-        self._sim_last_update = datetime.now()
-
-    def _generate_simulated_price(self):
-        """Generate simulated price movement"""
-        if not self.price_data:
-            self._sim_price = 100.0
-        else:
-            # Random walk with mean reversion
-            change = np.random.normal(0, 0.1)
-            mean_reversion = (100 - self._sim_price) * 0.1
-            self._sim_price += change + mean_reversion
-
-        current_time = datetime.now()
-
-        # Generate OHLC data
-        high = self._sim_price * (1 + abs(np.random.normal(0, 0.001)))
-        low = self._sim_price * (1 - abs(np.random.normal(0, 0.001)))
-
-        return {
-            'open': self.price_data[-1]['close'] if self.price_data else self._sim_price,
-            'high': high,
-            'low': low,
-            'close': self._sim_price,
-            'volume': int(np.random.normal(1000, 200)),
-            'timestamp': current_time
-        }
 
     def _verify_tws_configuration(self, host, port):
         """Verify TWS configuration and connectivity"""
@@ -88,10 +58,10 @@ class IBClient:
                     error_msg = """
                     TWS is running but not responding to API requests.
                     Please check in TWS:
-                    1. You are logged in to your paper trading account
+                    1. You are logged in to your account
                     2. API Configuration under Edit → Global Configuration → API:
                        - "Enable ActiveX and Socket Clients" is checked
-                       - Socket port is set to 7497
+                       - Socket port matches your trading mode (7497 for paper, 7496 for live)
                        - "Read-Only API" is unchecked
                     3. Try restarting TWS after making any changes
                     """
@@ -104,7 +74,7 @@ class IBClient:
                 This usually means:
                 1. TWS is not running (check Task Manager/Activity Monitor)
                 2. TWS is still starting up
-                3. Wrong port number (should be 7497 for paper trading)
+                3. Wrong port number (7497 for paper trading, 7496 for live trading)
                 """
                 logger.error(error_msg)
                 return False, error_msg
@@ -131,13 +101,8 @@ class IBClient:
                 pass
 
     def connect(self, host='127.0.0.1', port=7497, client_id=1):
-        """Connect to Interactive Brokers TWS with enhanced verification"""
+        """Connect to Interactive Brokers TWS"""
         try:
-            if self.simulation_mode:
-                self.connected = True
-                logger.info("Started in simulation mode")
-                return True, "Connected in simulation mode"
-
             current_time = time.time()
             if (current_time - self._last_connection_attempt) < self._connection_cooldown:
                 return False, "Please wait a few seconds before trying to connect again"
@@ -196,12 +161,6 @@ class IBClient:
     def subscribe_market_data(self, symbol):
         """Subscribe to real-time market data or generate simulated data"""
         try:
-            if self.simulation_mode:
-                # Start with initial simulated data point
-                if not self.price_data:
-                    self.price_data.append(self._generate_simulated_price())
-                return True
-
             contract = Stock(symbol, 'SMART', 'USD')
             self.ib.qualifyContracts(contract)
 
@@ -237,14 +196,6 @@ class IBClient:
         except Exception as e:
             logger.error(f"Error subscribing to market data: {str(e)}")
             return False
-
-    def update_simulated_data(self):
-        """Update simulated market data"""
-        if self.simulation_mode and self.connected:
-            current_time = datetime.now()
-            if not self.price_data or \
-               (current_time - self.price_data[-1]['timestamp']).seconds >= 60:
-                self.price_data.append(self._generate_simulated_price())
 
     def place_order(self, symbol, quantity, action, order_type='MKT'):
         """Place a new order"""

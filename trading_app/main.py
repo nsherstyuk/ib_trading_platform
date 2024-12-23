@@ -56,8 +56,7 @@ st.set_page_config(
 if 'initialized' not in st.session_state:
     logger.info("Initializing session state")
     st.session_state.initialized = True
-    st.session_state.simulation_mode = True  # Default to simulation mode
-    st.session_state.ib_client = IBClient(simulation_mode=True)
+    st.session_state.ib_client = IBClient()
     st.session_state.trading_logic = TradingLogic()
     st.session_state.risk_manager = RiskManager()
     st.session_state.show_instructions = False
@@ -89,13 +88,6 @@ def main():
                 confirm_live = st.checkbox("Yes, I understand the risks")
                 if not confirm_live:
                     paper_trading = True
-
-            simulation_mode = st.checkbox("Simulation Mode", value=st.session_state.simulation_mode)
-            if simulation_mode != st.session_state.simulation_mode:
-                st.session_state.simulation_mode = simulation_mode
-                st.session_state.ib_client = IBClient(simulation_mode=simulation_mode)
-                st.session_state.connection_status['connected'] = False
-                st.experimental_rerun()
 
             # Connection Configuration
             st.subheader("IB Connection Settings")
@@ -190,10 +182,6 @@ def main():
             if st.button("Stop Trading"):
                 st.session_state.trading_logic.stop_trading()
                 st.info("Trading stopped")
-
-        # Update simulated data if in simulation mode
-        if st.session_state.simulation_mode and st.session_state.ib_client.connected:
-            st.session_state.ib_client.update_simulated_data()
 
         # Main content area
         col1, col2 = st.columns([2, 1])
